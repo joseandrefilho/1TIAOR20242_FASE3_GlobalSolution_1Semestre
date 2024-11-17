@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modelo_SEM" id="4DA04D0B-8E15-49B4-C2DA-B96B338FE1B9" version="3.5">
+<createdBy>joseandrefilho</createdBy>
+<createdTime>2024-11-17 03:50:44 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>4DA04D0B-8E15-49B4-C2DA-B96B338FE1B9</designId>
+</OSDM_Design>
