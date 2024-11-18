@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3752AF80-1E1E-EC39-501E-C6E83543A4AB" name="T_SEM_ESTADO">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>4972C353-47FD-115F-F9F8-4E2DAF666E69</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<abbreviation>T_ESTADO</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_estado" id="1617324F-27E3-9C3F-2ACF-87B97987CB1A">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código único do estado.	]]></commentInRDBMS>
+<generatorID>FBCABB8C-0B78-8951-A7CC-0AC84272BF29</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_estado" id="02F9C336-6EFB-C7EE-2517-882835FFF92D">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do estado (e.g., São Paulo).]]></commentInRDBMS>
+<generatorID>A6229C07-95D1-1FBF-9FA7-71B81E1A98A0</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sg_estado" id="CE0BBF6F-98EA-D0CB-871E-9A93D41EEEFD">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sigla do estado (e.g., SP).]]></commentInRDBMS>
+<generatorID>506A296A-3E7B-22F8-EFD0-4604C9D05B69</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_regiao" id="4C7CE710-392D-82AB-9FED-0847F392424F">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código da região associada.]]></commentInRDBMS>
+<generatorID>4056314E-397F-1EAC-66A5-7120A934D495</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D37D5E53-4883-FD38-6010-43B960A9E58E" referredColumn="07DDE8A2-A280-A04C-2C54-32CFFDA3F329"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3E9374F5-F067-101A-807F-A221C6FA158F" name="PK_T_ESTADO">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>5E2A37BA-72DC-FF3F-B863-9DA398EB4E77</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1617324F-27E3-9C3F-2ACF-87B97987CB1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32E76B49-08C8-9861-A687-8F033D4351EC" name="UN_T_ESTADO_sg_estado">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>E4E0DC32-1C7B-EF24-56B3-364C34A0D0B6</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE0BBF6F-98EA-D0CB-871E-9A93D41EEEFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="344732C6-8C7B-A421-F1B5-F62236DC581A" name="FK_T_ESTADO_T_REGIAO">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>C36A2B3F-EA44-AA0B-00D0-2CF6AF5F8C74</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C7CE710-392D-82AB-9FED-0847F392424F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

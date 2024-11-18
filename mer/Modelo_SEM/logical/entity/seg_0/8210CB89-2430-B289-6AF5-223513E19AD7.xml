@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8210CB89-2430-B289-6AF5-223513E19AD7" name="T_SEM_MES">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:04:10 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>T_MES</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_mes" id="9108A595-E32F-FC78-77AE-D37B5CD3C0B1">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:04:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código único do mês (1-12).]]></commentInRDBMS>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cd_mes &gt;= 1 AND cd_mes &lt;= 12"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_mes" id="FE41315C-1661-4A14-D9E8-8981D65F54C9">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:04:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do mês (e.g., Janeiro).]]></commentInRDBMS>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sg_mes" id="3929AE6A-8C6C-B6CF-81D0-098D0AA387AE">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:04:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sigla do mês (e.g., JAN).]]></commentInRDBMS>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BFDD3709-D12D-8148-1BF4-4AD728CF7ED9" name="T_SEM_MES PK">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:04:32 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9108A595-E32F-FC78-77AE-D37B5CD3C0B1</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="216C0BF4-0014-6E92-486B-AC9706472363" name="UN_MES_NOME">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:05:58 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="false"/>
+</engineerTo>
+<newElementsIDs>FE41315C-1661-4A14-D9E8-8981D65F54C9</newElementsIDs>
+<usedAttributes>
+<attributeRef>FE41315C-1661-4A14-D9E8-8981D65F54C9</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="438A4A13-959C-6116-618A-AA043AD411BA" name="UN_MES_SIGLA">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:06:23 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="false"/>
+</engineerTo>
+<newElementsIDs>3929AE6A-8C6C-B6CF-81D0-098D0AA387AE</newElementsIDs>
+<usedAttributes>
+<attributeRef>3929AE6A-8C6C-B6CF-81D0-098D0AA387AE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

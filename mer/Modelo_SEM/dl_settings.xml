@@ -276,19 +276,19 @@
 			</domain>
 		</domains>
 		<constraints>
-			<pk value="{table}_PK"/>
-			<fk value="{child}_{parent}_FK"/>
-			<ck value="{table}_CK"/>
-			<un value="{table}_{column}_UN"/>
-			<idx value="{table}_{column}_IDX"/>
-			<automatic_idx value="{table}_{column}_IDX"/>
-			<colck value="CK_{table}_{column}"/>
-			<colnnc value="NNC_{table abbr}_{column}"/>
-			<column_foreign_key value="{ref table}_{ref column}"/>
-			<ui value="{entity} PK"/>
-			<relation_attribute value="{ref entity}_{ref attribute}"/>
-			<surrogate_key value="{table abbr}_PK"/>
-			<surrogate_key_col value="{table abbr}_ID"/>
+			<pk value="PK_{table abbr}"/>
+			<fk value="FK_{child abbr}_{parent abbr}"/>
+			<ck value="CK_{table abbr}"/>
+			<un value="UN_{table abbr}_{column abbr}"/>
+			<idx value="IDX_{table abbr}_{column abbr}"/>
+			<automatic_idx value="IDX_{table abbr}_{column abbr}"/>
+			<colck value="CK_{table abbr}_{column abbr}"/>
+			<colnnc value="NNC_{table abbr}_{column abbr}"/>
+			<column_foreign_key value="{ref column}"/>
+			<ui value="PK {ent short name}"/>
+			<relation_attribute value="{ref entity short name}_{ref attribute}"/>
+			<surrogate_key value="PK_{table abbr}"/>
+			<surrogate_key_col value="ID_{table abbr}"/>
 			<discriminator_col value="{table abbr}_TYPE"/>
 		</constraints>
 		<glossaries>
@@ -299,7 +299,7 @@
 	<engineering_params>
 		<delete_without_origin value="false"/>
 		<engineer_coordinates value="true"/>
-		<engineer_generated value="false"/>
+		<engineer_generated value="true"/>
 		<show_engineering_intree value="false"/>
 		<apply_naming_std value="true"/>
 		<use_pref_abbreviation value="true"/>

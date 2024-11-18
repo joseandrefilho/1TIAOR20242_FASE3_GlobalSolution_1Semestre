@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="T_SEM_POPULACAO" directorySegmentName="seg_1" id="5CC65C92-99D6-DD63-3517-A4EAD05EC9AB">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:32:33 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="vl_populacao" id="31CE0C68-4A59-DC1A-BF4E-F2E3D181E23D">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:32:33 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cd_estado" id="83172735-8F5D-B6B4-62A9-FDFEEDDBA746">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:32:33 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cd_ano" id="8AEE9FC4-6A69-E2EE-583C-6546D010F4B0">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:32:33 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_T_POPULACAO_T_ESTADO" id="61BE2A00-0881-21AF-DD48-EBF73200DC41">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:32:33 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_T_POPULACAO_T_ANO" id="852EECE4-8E18-3B14-8254-098E39AFC7BB">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:32:33 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_T_POPULACAO" id="18730D0B-8C1F-6F6D-0DE2-2148D9857433">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:34:38 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

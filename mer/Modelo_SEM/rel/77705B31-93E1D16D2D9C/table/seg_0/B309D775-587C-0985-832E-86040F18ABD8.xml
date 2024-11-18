@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B309D775-587C-0985-832E-86040F18ABD8" name="T_SEM_ANO">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>CA5B4EA1-8260-A4B1-3C54-730F4D1F240B</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<abbreviation>T_ANO</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_ano" id="AB57BDFC-8456-B108-377B-A75BADDF895E">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código único do ano (e.g., 2022, 2023).	]]></commentInRDBMS>
+<generatorID>E097AAE9-1F3F-1279-D14B-DA80447F6939</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_ano" id="C7933627-52E4-7A0B-525A-1A39483EFE76">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome ou valor do ano (igual a cd_ano).	]]></commentInRDBMS>
+<generatorID>CF4E16C1-A687-CA1A-B89C-6AADF3C5B232</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F3CAC673-193A-3E65-EB15-A2294409F826" name="PK_T_ANOv1">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>7BDBDDEF-453D-3140-B568-25A8A30FDD84</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB57BDFC-8456-B108-377B-A75BADDF895E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="31A28C26-69DF-565D-638B-9CFB4099FBCF" name="UN_T_ANO_nm_anov1">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>302205BA-ACDF-90A6-7759-1BCD902D9915</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7933627-52E4-7A0B-525A-1A39483EFE76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

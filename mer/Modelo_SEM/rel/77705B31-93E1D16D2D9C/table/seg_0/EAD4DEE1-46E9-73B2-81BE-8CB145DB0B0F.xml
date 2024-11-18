@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EAD4DEE1-46E9-73B2-81BE-8CB145DB0B0F" name="T_SEM_MES">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>8210CB89-2430-B289-6AF5-223513E19AD7</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<abbreviation>T_MES</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_mes" id="6AFC804F-93A6-A6E1-BFDE-A8843FB088D9">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código único do mês (1-12).]]></commentInRDBMS>
+<generatorID>9108A595-E32F-FC78-77AE-D37B5CD3C0B1</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="cd_mes &gt;= 1 AND cd_mes &lt;= 12"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_mes" id="127B3DA8-1844-0ECA-1488-494224B221D4">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do mês (e.g., Janeiro).]]></commentInRDBMS>
+<generatorID>FE41315C-1661-4A14-D9E8-8981D65F54C9</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sg_mes" id="EA450BA1-D36A-7290-D5F9-980C9B9A2AEF">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sigla do mês (e.g., JAN).]]></commentInRDBMS>
+<generatorID>3929AE6A-8C6C-B6CF-81D0-098D0AA387AE</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18809EE9-9663-CF4B-0ED1-1B2EE74A2887" name="PK_T_MES">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>BFDD3709-D12D-8148-1BF4-4AD728CF7ED9</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6AFC804F-93A6-A6E1-BFDE-A8843FB088D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2AE2EDC-1C7E-017F-4B71-9DA7499BD2E1" name="UN_T_MES_nm_mes">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>216C0BF4-0014-6E92-486B-AC9706472363</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="127B3DA8-1844-0ECA-1488-494224B221D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D376D275-0352-8561-8B29-B88A0DDB9D29" name="UN_T_MES_sg_mes">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>438A4A13-959C-6116-618A-AA043AD411BA</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA450BA1-D36A-7290-D5F9-980C9B9A2AEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

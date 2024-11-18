@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="65C74AAE-12AF-82FF-19CA-B4183E573A99" name="T_SEM_CONSUMO_ENERGIA">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>AE5E59B7-81DF-BB17-707B-D513F4C2B832</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<abbreviation>T_CONS_ENERG</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_consumo" id="8D53A633-F731-A171-208C-09EDE72DAE50">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código único do registro de consumo.]]></commentInRDBMS>
+<generatorID>D4787E2C-AD99-297C-2336-46B349A6E7A1</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="est" id="2034D305-97F9-6494-D407-8525DB6A56A7">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do estado associado ao consumo.	]]></commentInRDBMS>
+<generatorID>5776C6CD-156E-ADC8-0183-3EAD2390460C</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA7AAB0E-18F9-6FB7-5A9D-5253DF4B489C" referredColumn="1617324F-27E3-9C3F-2ACF-87B97987CB1A"/>
+</associations>
+</Column>
+<Column name="ano" id="1981E302-D022-F0DA-9E6B-A1373B62AAB3">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do ano associado ao consumo.]]></commentInRDBMS>
+<generatorID>186BFEFB-ED90-F358-793A-267C571BF4F2</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D7871DA0-6442-3F46-D87D-2711F72B361F" referredColumn="AB57BDFC-8456-B108-377B-A75BADDF895E"/>
+</associations>
+</Column>
+<Column name="mes" id="AA7BC17C-E9F3-CD81-B2CE-7EDE15D10BC4">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do mês associado ao consumo.]]></commentInRDBMS>
+<generatorID>663E3F52-1CED-F387-9924-93D199D82E66</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7AB593C4-2093-1B9B-8667-CE953352D068" referredColumn="6AFC804F-93A6-A6E1-BFDE-A8843FB088D9"/>
+</associations>
+</Column>
+<Column name="vl_consumo" id="96A54101-7D1E-EDC7-F6F8-A80774CA4424">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor do consumo energético em MWh.]]></commentInRDBMS>
+<generatorID>C83AEFC7-29C1-AB88-5299-C574984D1B24</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="vl_consumo &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6B356BAC-D388-8479-FE7E-8C05372F8163" name="PK_T_CONS_ENERGv1">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>79F4EFE8-5140-4ADE-40CD-32C7C78E4608</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D53A633-F731-A171-208C-09EDE72DAE50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E1CA61E-C94C-B9EA-571B-FF30D9DB5F3F" name="UN_T_CONS_ENERG_est_mes_anov1">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>4D1E373D-E790-D56D-51AF-7D5AEB178D94</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2034D305-97F9-6494-D407-8525DB6A56A7"/>
+<colUsage columnID="AA7BC17C-E9F3-CD81-B2CE-7EDE15D10BC4"/>
+<colUsage columnID="1981E302-D022-F0DA-9E6B-A1373B62AAB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33D1699D-5EEA-FD46-D2EC-26D87D562273" name="FK_T_CONS_ENERG_T_MES">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>A5162F84-DF24-82E7-B0AC-C741D558715C</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA7BC17C-E9F3-CD81-B2CE-7EDE15D10BC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08A43081-4B7E-FC9E-00DF-73A52A141E16" name="FK_T_CONS_ENERG_T_ANO">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>38BBC0D5-A864-D52B-87FE-5FA911070199</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1981E302-D022-F0DA-9E6B-A1373B62AAB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="70F220A5-2797-349C-4C0D-6C0BB0E5E226" name="FK_T_CONS_ENERG_T_ESTADO">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>343EBEC4-0E38-FBBF-7592-1EF626B2B8C1</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2034D305-97F9-6494-D407-8525DB6A56A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

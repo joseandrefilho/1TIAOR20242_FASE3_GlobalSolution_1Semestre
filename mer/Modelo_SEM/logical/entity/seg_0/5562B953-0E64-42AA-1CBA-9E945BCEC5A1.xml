@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5562B953-0E64-42AA-1CBA-9E945BCEC5A1" name="T_SEM_POPULACAO">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:30:02 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>T_POPULACAO</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_estado" id="3AFB73EC-EFA5-B41D-DA69-BD51B9FB6A21">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:31:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do estado.]]></commentInRDBMS>
+<generatorID>99C6C74B-68FC-0007-FDD6-1470D08CEE6C</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="true"/>
+</engineerTo>
+<referedAttribute>FBCABB8C-0B78-8951-A7CC-0AC84272BF29</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_ano" id="A7D817D4-C11B-7BEB-6070-60A827A991EB">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:31:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do ano.]]></commentInRDBMS>
+<generatorID>796CE539-28C6-6B10-4161-B17682D7B1DE</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="true"/>
+</engineerTo>
+<referedAttribute>E097AAE9-1F3F-1279-D14B-DA80447F6939</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_populacao" id="50E1F874-1154-C5C2-E55C-54088854F1BA">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:30:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[População total do estado no ano.]]></commentInRDBMS>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BE44E391-EA4A-CB97-40A0-29B1F05DD62C" name="PK T_POPULACAO">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:33:46 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A7D817D4-C11B-7BEB-6070-60A827A991EB</attributeRef>
+<attributeRef>3AFB73EC-EFA5-B41D-DA69-BD51B9FB6A21</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
