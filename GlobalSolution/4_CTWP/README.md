@@ -20,181 +20,123 @@
 # Sistema de Gerenciamento Energético Residencial
 
 ## Descrição
-Sistema automatizado em Python para gerenciamento e otimização do consumo energético residencial, com interface gráfica interativa e monitoramento em tempo real. O sistema permite a seleção automática de fontes de energia baseada em critérios de economia e sustentabilidade.
+
+Sistema automatizado em Python para gerenciamento e otimização do consumo energético residencial, com interface gráfica interativa e monitoramento em tempo real. O sistema permite a seleção automática de fontes de energia baseada em critérios de economia e sustentabilidade, com foco na redução de custos e aumento da eficiência energética.
 
 ## Funcionalidades Principais
 
 ### 1. Monitoramento em Tempo Real
+
 - Visualização do consumo energético atual
 - Acompanhamento de tarifas das diferentes fontes
 - Gráficos dinâmicos de consumo
 - Indicadores de performance energética
 
 ### 2. Gestão de Fontes de Energia
+
 - Seleção automática entre energia solar e rede elétrica
 - Monitoramento da capacidade solar disponível
 - Cálculo de custos por fonte
 - Análise de intensidade de carbono
 
 ### 3. Interface Gráfica
+
 - Dashboard interativo com Tkinter
 - Gráficos atualizados em tempo real
-- Indicadores visuais de fonte atual
-- Seleção de recursos solares
+- Indicadores visuais da fonte atual de energia
+- Seleção de recursos solares disponíveis
 
 ### 4. Relatórios e Análises
-- Geração de relatórios de consumo
+
+- Geração de relatórios de consumo em formato CSV
 - Cálculo de custos acumulados
-- Histórico de uso por fonte
-- Métricas de eficiência
+- Histórico de uso por fonte de energia
+- Métricas de eficiência para avaliação do consumo
 
 ## Arquitetura do Sistema
 
 ```
-energy_system/
+4_CTWP/
 │
-├── energy_management_system.py   # Arquivo principal
-├── requirements.txt             # Dependências
-├── .env                        # Configurações e chaves de API
-└── relatorios/                 # Relatórios gerados
-```
-
-### Classes Principais
-
-#### 1. EnergyManager
-```python
-class EnergyManager:
-    """Gerencia fontes de energia, tarifas e consumo."""
-    def __init__(self):
-        self.data = pd.DataFrame()
-        self.current_tariff = {}
-        self.solar_capacity = None
-```
-
-#### 2. MQTTClient
-```python
-class MQTTClient:
-    """Gerencia comunicação MQTT para dados em tempo real."""
-    def __init__(self, energy_manager):
-        self.client = mqtt.Client()
-```
-
-#### 3. GUI
-```python
-class GUI:
-    """Interface gráfica do sistema."""
-    def __init__(self, energy_manager):
-        self.root = tk.Tk()
-        self.energy_manager = energy_manager
-```
-
-## Instalação e Execução
-
-1. **Requisitos do Sistema**
-```bash
-# Dependências principais
-python >= 3.8
-tkinter
-pandas
-matplotlib
-paho-mqtt
-python-dotenv
-requests
-```
-
-2. **Instalação**
-```bash
-# Clone o repositório
-git clone [url-do-repositorio]
-
-# Instale as dependências
-pip install -r requirements.txt
-
-# Configure o arquivo .env
-ELECTRICITYMAP_API_KEY=sua_chave_aqui
-```
-
-3. **Execução**
-```bash
-python energy_management_system.py
+├── requirements.txt               # Lista de dependências do Python
+└── src/
+    ├── EnergyManager.py             # Classe que gerencia fontes de energia, tarifas e consumo
+    ├── MQTTClient.py                # Classe que gerencia a comunicação com o broker MQTT
+    ├── GUI.py                       # Classe que gerencia a interface gráfica com Tkinter
+    └── main.py                      # Arquivo principal para execução do sistema
 ```
 
 ## Uso do Sistema
+### 1. Configuração do Ambiente
 
-### 1. Inicialização
-1. Execute o programa
+1. Crie um arquivo `.env` na raiz do projeto para configurar as variáveis de ambiente necessárias.
+2. Adicione as seguintes variáveis ao arquivo `.env`:
+   ```
+   ELECTRICITYMAP_API_KEY=sua_chave_api
+   ```
+3. Substitua `sua_chave_api` pela chave de API da plataforma ElectricityMap.
+4. Salve o arquivo `.env`.
+
+### 2. Inicialização
+
+1. Instale as dependências com `pip install -r requirements.txt`
+2. Execute o arquivo `main.py`
 2. Aguarde a conexão com o broker MQTT
-3. Selecione o recurso solar disponível
+3. Selecione o recurso solar disponível na interface gráfica
 
-### 2. Monitoramento
-- Observe o gráfico de consumo em tempo real
-- Verifique a fonte atual de energia
-- Monitore as tarifas vigentes
+### 3. Monitoramento
 
-### 3. Relatórios
-1. Clique em "Salvar Relatório"
+- Observe o gráfico de consumo em tempo real na interface
+- Verifique a fonte atual de energia utilizada
+- Monitore as tarifas vigentes para cada fonte de energia
+
+### 4. Relatórios
+
+1. Clique em "Salvar Relatório" na interface gráfica
 2. O arquivo será salvo em formato CSV
-3. Analise os dados históricos
+3. Analise os dados históricos para avaliação da eficiência energética
 
 ## Integrações
 
 ### 1. MQTT
+
 - Broker: mqtt.eclipseprojects.io
 - Tópico: rm87775/home/energy/consumption
 - Formato: Valores de consumo em kWh
 
 ### 2. APIs Externas
-- ElectricityMap: Intensidade de carbono
-- MockAPI: Dados de recursos solares
+
+- ElectricityMap: Intensidade de carbono para cada fonte de energia
+- MockAPI: Dados dos recursos solares disponíveis
 
 ## Tomada de Decisão Automática
 
-O sistema seleciona a fonte de energia baseado em:
+O sistema seleciona a fonte de energia com base em:
+
 1. Disponibilidade de energia solar
-2. Comparação de tarifas
-3. Intensidade de carbono
-4. Capacidade atual do sistema
+2. Comparação de tarifas entre energia solar e rede elétrica
+3. Intensidade de carbono de cada fonte
+4. Capacidade atual do sistema solar
 
 ## Monitoramento e Alertas
 
 O sistema monitora continuamente:
-- Níveis de consumo
-- Alterações nas tarifas
+
+- Níveis de consumo energético
+- Alterações nas tarifas de energia
 - Capacidade solar disponível
-- Eficiência do sistema
+- Eficiência do sistema em tempo real
 
 ## Sustentabilidade
 
 Foco em energia limpa através de:
-- Priorização de energia solar
-- Análise de intensidade de carbono
-- Otimização de consumo
-- Métricas de eficiência
 
-## Desenvolvimento Futuro
-
-### Melhorias Planejadas
-1. Integração com mais fontes de energia
-2. Machine Learning para previsão de consumo
-3. App mobile para monitoramento
-4. Alertas personalizados
-5. Backup de dados em nuvem
-
-## Suporte
-
-Em caso de problemas:
-1. Verifique as conexões MQTT
-2. Confirme as chaves de API
-3. Consulte os logs do sistema
-4. Entre em contato com suporte
+- Priorização de energia solar sempre que disponível
+- Análise da intensidade de carbono de cada fonte
+- Otimização do consumo para reduzir o impacto ambiental
+- Métricas de eficiência para promover o uso sustentável
 
 ## Licença
-MIT License
 
-## Autor
-[Seu Nome]
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
 
-## Agradecimentos
-- FIAP
-- Comunidade Python
-- Contribuidores

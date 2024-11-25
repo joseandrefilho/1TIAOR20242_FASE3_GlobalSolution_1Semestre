@@ -8,14 +8,14 @@
 
 # Statistical Computing with R (SCR)
 
-## Integrantes: 
-- <a href="https://www.linkedin.com/in/joseandrefilho">Jose Andre Filho</a>
+## Integrantes:
+- [Jose Andre Filho](https://www.linkedin.com/in/joseandrefilho)
 
 ## Professores:
-### Tutor 
-- <a href="https://www.linkedin.com/in/lucas-gomes-moreira-15a8452a/">Lucas Gomes Moreira</a>
+### Tutor
+- [Lucas Gomes Moreira](https://www.linkedin.com/in/lucas-gomes-moreira-15a8452a/)
 ### Coordenador
-- <a href="https://www.linkedin.com/in/profandregodoi/">André Godoi Chiovato</a>
+- [André Godoi Chiovato](https://www.linkedin.com/in/profandregodoi/)
 
 # Análise Estatística de Tarifas de Energia - ANEEL
 
@@ -24,16 +24,15 @@ Este projeto realiza uma análise exploratória das tarifas homologadas das dist
 
 ## Estrutura do Projeto
 ```
-projeto/
+2_SCR/
 ├── main.R           # Script principal que orquestra a execução
-├── R/               # Scripts de análise
-│   ├── part1.R     # Configurações e funções auxiliares
-│   ├── part2.R     # Análises estatísticas
-│   └── part3.R     # Visualizações e insights
-├── data/           # Dados brutos da ANEEL
-└── resultados/     # Resultados gerados
-    ├── dados/      # Arquivos CSV com análises
-    └── graficos/   # Visualizações geradas
+├── part1.R          # Configurações e funções auxiliares
+├── part2.R          # Análises estatísticas
+├── part3.R          # Visualizações e insights
+├── data/            # Dados brutos da ANEEL
+└── resultados/      # Resultados gerados
+    ├── dados/       # Arquivos CSV com análises
+    └── graficos/    # Visualizações geradas
 ```
 
 ## Conjunto de Dados
@@ -68,18 +67,22 @@ O projeto gera insights em quatro pilares principais:
 1. **Inovação**
    - Identificação de áreas para implementação de smart grids
    - Oportunidades para sistemas de armazenamento distribuído
+   - Sugestão de tecnologias emergentes que podem ser aplicadas para melhorar a eficiência da rede elétrica, como IoT e sensores inteligentes
 
 2. **Justiça Social**
    - Análise de disparidades tarifárias regionais
    - Recomendações para equalização tarifária
+   - Identificação de grupos vulneráveis mais impactados pelas tarifas altas e sugestões de políticas públicas para apoio
 
 3. **Crescimento Econômico**
    - Impacto das tarifas por setor
    - Oportunidades para eficiência energética
+   - Avaliação do impacto econômico de investimentos em infraestrutura energética, como a modernização de redes de distribuição
 
 4. **Preservação Ambiental**
    - Potencial para energia solar
    - Áreas prioritárias para transição energética
+   - Proposta de incentivos para adoção de energias renováveis em regiões com alto potencial solar ou eólico
 
 ## Requisitos
 - R (versão >= 4.0.0)
@@ -122,19 +125,6 @@ Os resultados são gerados em dois formatos:
    - disparidade_regional.png
    - evolucao_temporal.png
 
-## Contribuição
-Para contribuir com o projeto:
-1. Faça um Fork
-2. Crie sua Feature Branch
-3. Faça commit de suas alterações
-4. Envie um Pull Request
-
 ## Licença
-Este projeto está sob a licença MIT.
 
-## Contato
-[Seu Nome] - [seu.email@dominio.com]
-
-## Agradecimentos
-- ANEEL pelos dados abertos
-- Comunidade R
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>

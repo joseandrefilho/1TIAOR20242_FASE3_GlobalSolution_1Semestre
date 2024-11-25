@@ -17,37 +17,48 @@
 ### Coordenador
 - <a href="https://www.linkedin.com/in/profandregodoi/">André Godoi Chiovato</a>
 
-## Descrição Geral
+# Global Solution 2024.2 - Eficiência Energética Integrada
 
-O projeto Global Solution integra quatro subprojetos com foco em eficiência energética, utilizando IoT, análise de dados, bancos de dados e Python. Cada subprojeto aborda um desafio específico:
+## Visão Geral
+Este repositório contém os projetos desenvolvidos como parte da solução global para a disciplina de Inteligência Artificial do semestre 2024.2, com foco em otimização do consumo de energia em ambientes residenciais, comerciais e urbanos. O objetivo é criar soluções inovadoras e sustentáveis que contribuam para a eficiência energética e a preservação ambiental, utilizando técnicas de Data Science, IoT, Big Data e IA.
 
-1. **AICSS** - Automação de iluminação residencial com ESP32.
-2. **SCR** - Análise estatística de dados da ANEEL utilizando R.
-3. **CDS** - Pipeline de dados e banco de dados relacional para consumo energético.
-4. **CTWP** - Sistema de gerenciamento energético em Python com interface gráfica.
+## Módulos do Projeto
+O repositório está organizado em quatro módulos principais, cada um representando uma disciplina da grade curricular da FIAP:
 
-## Estrutura do Projeto
+### 1. Artificial Intelligence with Computer Systems and Sensors (AICSS)
+Este módulo aborda a otimização da iluminação em ambientes residenciais com o uso de sensores e automação. O projeto utiliza um ESP32 para gerenciar a iluminação com base na detecção de luminosidade e presença, promovendo eficiência energética e segurança.
 
-```
-GlobalSolution/
-├── 1_AICSS/        # Automação de Iluminação
-├── 2_SCR/          # Análise Estatística
-├── 3_CDS/          # Banco de Dados e Pipeline
-├── 4_CTWP/         # Gerenciamento Energético
-├── README.md       # Este arquivo
-```
+- **Componentes Utilizados**: ESP32, Sensor LDR, Sensor Ultrassônico, LEDs.
+- **Funcionalidades**: Controle automático de iluminação externa e interna, monitoramento de consumo via MQTT, sistema de debug em tempo real.
+- **Link do Projeto**: [Leia mais sobre AICSS](./1_AICSS/README.md)
 
-## Configuração e Execução
+### 2. Statistical Computing with R (SCR)
+No módulo de Estatística Computacional, desenvolvemos análises exploratórias das tarifas de energia das distribuidoras brasileiras. Utilizando R, identificamos padrões de consumo, disparidades tarifárias e oportunidades para transição para fontes de energia sustentáveis.
 
-Cada subprojeto possui seu próprio README com instruções detalhadas. Consulte os diretórios correspondentes para maiores detalhes.
+- **Conjunto de Dados**: Tarifas homologadas da ANEEL.
+- **Funcionalidades**: Análises descritivas, visualizações de dados, análises integradas em quatro pilares – Inovação, Justiça Social, Crescimento Econômico e Preservação Ambiental.
+- **Link do Projeto**: [Leia mais sobre SCR](./2_SCR/README.md)
 
-## Contribuição
+### 3. Cognitive Data Science (CDS)
+O módulo de Data Science Cognitiva envolve a criação de um pipeline de dados para análise do consumo energético brasileiro, utilizando dados populacionais e de consumo elétrico. A análise inclui tendências temporais e geográficas para identificar áreas de alta demanda e oportunidades de melhoria.
 
-Para contribuir com este projeto:
-1. Faça um Fork.
-2. Crie uma Feature Branch.
-3. Envie um Pull Request.
+- **Tecnologias Utilizadas**: Python, Pandas, Oracle Database, Jupyter Notebooks.
+- **Funcionalidades**: Extração e processamento de dados, análises temporais e geográficas, projeção de consumo futuro.
+- **Link do Projeto**: [Leia mais sobre CDS](./3_CDS/README.md)
+
+### 4. Computational Thinking with Python (CTWP)
+No módulo de Pensamento Computacional com Python, implementamos um sistema de gerenciamento energético residencial automatizado. O sistema seleciona a fonte de energia – solar ou rede elétrica – com base em critérios como disponibilidade, tarifas e intensidade de carbono.
+
+- **Tecnologias Utilizadas**: Python, Tkinter, MQTT.
+- **Funcionalidades**: Monitoramento em tempo real, seleção automática de fonte de energia, geração de relatórios de consumo.
+- **Link do Projeto**: [Leia mais sobre CTWP](./4_CTWP/README.md)
+
+## Impacto Esperado
+- **Eficiência Energética**: Otimização do consumo de energia elétrica em diversos ambientes.
+- **Sustentabilidade**: Promover o uso de energia limpa e reduzir o impacto ambiental.
+- **Conforto e Praticidade**: Automação inteligente que melhora o conforto do usuário sem comprometimento do consumo de recursos.
+- **Justiça Social e Inovação**: Uso de tecnologias emergentes para mitigar desigualdades e aumentar a eficiência.
 
 ## Licença
 
-Este projeto está licenciado sob a MIT License.
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
