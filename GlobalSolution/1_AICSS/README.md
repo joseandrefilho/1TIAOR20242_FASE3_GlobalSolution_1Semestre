@@ -150,8 +150,11 @@ O projeto pode ser simulado no Wokwi:
 3. Ajuste dinâmico dos parâmetros de detecção com base em dados de uso.
 4. Registro e armazenamento histórico do consumo energético.
 
-## Link do Vídeo
-[Link para o vídeo no YouTube]
+## Vídeo de Apresentação
+
+O vídeo de apresentação do projeto está disponível no YouTube, no link abaixo:
+
+[![Vídeo de Apresentação](https://img.youtube.com/vi/IkX7U5Jvk2s/0.jpg)](https://www.youtube.com/watch?v=IkX7U5Jvk2s)
 
 ## Licença
 
