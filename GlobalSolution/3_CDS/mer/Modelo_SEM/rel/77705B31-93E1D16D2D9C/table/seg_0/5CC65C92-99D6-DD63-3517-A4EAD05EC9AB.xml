@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5CC65C92-99D6-DD63-3517-A4EAD05EC9AB" name="T_SEM_POPULACAO">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:32:33 UTC</createdTime>
+<generatorID>5562B953-0E64-42AA-1CBA-9E945BCEC5A1</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<abbreviation>T_POPULACAO</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_estado" id="83172735-8F5D-B6B4-62A9-FDFEEDDBA746">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:32:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do estado.]]></commentInRDBMS>
+<generatorID>3AFB73EC-EFA5-B41D-DA69-BD51B9FB6A21</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F811BECF-6B38-245D-59D8-E95AC5AF6D2A" referredColumn="1617324F-27E3-9C3F-2ACF-87B97987CB1A"/>
+</associations>
+</Column>
+<Column name="cd_ano" id="8AEE9FC4-6A69-E2EE-583C-6546D010F4B0">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:32:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do ano.]]></commentInRDBMS>
+<generatorID>A7D817D4-C11B-7BEB-6070-60A827A991EB</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C17F5D3F-B766-935C-719F-0666520E167E" referredColumn="AB57BDFC-8456-B108-377B-A75BADDF895E"/>
+</associations>
+</Column>
+<Column name="vl_populacao" id="31CE0C68-4A59-DC1A-BF4E-F2E3D181E23D">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:32:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[População total do estado no ano.]]></commentInRDBMS>
+<generatorID>50E1F874-1154-C5C2-E55C-54088854F1BA</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18730D0B-8C1F-6F6D-0DE2-2148D9857433" name="PK_T_POPULACAO">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:34:38 UTC</createdTime>
+<generatorID>BE44E391-EA4A-CB97-40A0-29B1F05DD62C</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8AEE9FC4-6A69-E2EE-583C-6546D010F4B0"/>
+<colUsage columnID="83172735-8F5D-B6B4-62A9-FDFEEDDBA746"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61BE2A00-0881-21AF-DD48-EBF73200DC41" name="FK_T_POPULACAO_T_ESTADO">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:32:33 UTC</createdTime>
+<generatorID>99C6C74B-68FC-0007-FDD6-1470D08CEE6C</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83172735-8F5D-B6B4-62A9-FDFEEDDBA746"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="852EECE4-8E18-3B14-8254-098E39AFC7BB" name="FK_T_POPULACAO_T_ANO">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-18 00:32:33 UTC</createdTime>
+<generatorID>796CE539-28C6-6B10-4161-B17682D7B1DE</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8AEE9FC4-6A69-E2EE-583C-6546D010F4B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

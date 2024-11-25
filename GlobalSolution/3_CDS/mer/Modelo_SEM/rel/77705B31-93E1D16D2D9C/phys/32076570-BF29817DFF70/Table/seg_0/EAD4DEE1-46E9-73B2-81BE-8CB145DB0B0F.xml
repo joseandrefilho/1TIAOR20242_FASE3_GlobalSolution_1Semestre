@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="T_SEM_MES" directorySegmentName="seg_0" id="EAD4DEE1-46E9-73B2-81BE-8CB145DB0B0F">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="nm_mes" id="127B3DA8-1844-0ECA-1488-494224B221D4">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cd_mes" id="6AFC804F-93A6-A6E1-BFDE-A8843FB088D9">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="sg_mes" id="EA450BA1-D36A-7290-D5F9-980C9B9A2AEF">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_T_MES" id="18809EE9-9663-CF4B-0ED1-1B2EE74A2887">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UN_T_MES_sg_mes" id="D376D275-0352-8561-8B29-B88A0DDB9D29">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UN_T_MES_nm_mes" id="E2AE2EDC-1C7E-017F-4B71-9DA7499BD2E1">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

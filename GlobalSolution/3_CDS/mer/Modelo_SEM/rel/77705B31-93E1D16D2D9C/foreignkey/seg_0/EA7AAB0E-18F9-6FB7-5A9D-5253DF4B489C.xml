@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EA7AAB0E-18F9-6FB7-5A9D-5253DF4B489C" containerWithKeyObject="65C74AAE-12AF-82FF-19CA-B4183E573A99" localFKIndex="70F220A5-2797-349C-4C0D-6C0BB0E5E226" name="FK_T_CONS_ENERG_T_ESTADO">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:56:09 UTC</createdTime>
+<generatorID>343EBEC4-0E38-FBBF-7592-1EF626B2B8C1</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<referredTableLongName>T_SEM_ESTADO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3752AF80-1E1E-EC39-501E-C6E83543A4AB</referredTableID>
+<keyObject>3E9374F5-F067-101A-807F-A221C6FA158F</keyObject>
+<referredKeyID>3E9374F5-F067-101A-807F-A221C6FA158F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_estado</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

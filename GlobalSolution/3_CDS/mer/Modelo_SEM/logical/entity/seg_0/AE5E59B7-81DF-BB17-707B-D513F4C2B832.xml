@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AE5E59B7-81DF-BB17-707B-D513F4C2B832" name="T_SEM_CONSUMO_ENERGIA">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:14:04 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>T_CONS_ENERG</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_consumo" id="D4787E2C-AD99-297C-2336-46B349A6E7A1">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:14:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código único do registro de consumo.]]></commentInRDBMS>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_estado" id="5776C6CD-156E-ADC8-0183-3EAD2390460C">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:16:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do estado associado ao consumo.	]]></commentInRDBMS>
+<generatorID>343EBEC4-0E38-FBBF-7592-1EF626B2B8C1</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="true"/>
+</engineerTo>
+<referedAttribute>FBCABB8C-0B78-8951-A7CC-0AC84272BF29</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>est</preferredAbbreviation>
+</Attribute>
+<Attribute name="cd_ano" id="186BFEFB-ED90-F358-793A-267C571BF4F2">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:16:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do ano associado ao consumo.]]></commentInRDBMS>
+<generatorID>38BBC0D5-A864-D52B-87FE-5FA911070199</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="true"/>
+</engineerTo>
+<referedAttribute>E097AAE9-1F3F-1279-D14B-DA80447F6939</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>ano</preferredAbbreviation>
+</Attribute>
+<Attribute name="cd_mes" id="663E3F52-1CED-F387-9924-93D199D82E66">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:16:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do mês associado ao consumo.]]></commentInRDBMS>
+<generatorID>A5162F84-DF24-82E7-B0AC-C741D558715C</generatorID>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="true"/>
+</engineerTo>
+<referedAttribute>9108A595-E32F-FC78-77AE-D37B5CD3C0B1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<preferredAbbreviation>mes</preferredAbbreviation>
+</Attribute>
+<Attribute name="vl_consumo" id="C83AEFC7-29C1-AB88-5299-C574984D1B24">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:14:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor do consumo energético em MWh.]]></commentInRDBMS>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="vl_consumo &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="79F4EFE8-5140-4ADE-40CD-32C7C78E4608" name="T_SEM_CONSUMO_ENERGIA PK">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:14:28 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D4787E2C-AD99-297C-2336-46B349A6E7A1</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="4D1E373D-E790-D56D-51AF-7D5AEB178D94" name="UN_CONSUMO_ESTADO_ANO_MES">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:18:57 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="true"/>
+</engineerTo>
+<newElementsIDs>5776C6CD-156E-ADC8-0183-3EAD2390460C,663E3F52-1CED-F387-9924-93D199D82E66,186BFEFB-ED90-F358-793A-267C571BF4F2</newElementsIDs>
+<usedAttributes>
+<attributeRef>5776C6CD-156E-ADC8-0183-3EAD2390460C</attributeRef>
+<attributeRef>663E3F52-1CED-F387-9924-93D199D82E66</attributeRef>
+<attributeRef>186BFEFB-ED90-F358-793A-267C571BF4F2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

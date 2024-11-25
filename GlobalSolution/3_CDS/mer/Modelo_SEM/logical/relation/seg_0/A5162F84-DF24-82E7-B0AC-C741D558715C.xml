@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CONSTA" directorySegmentName="seg_0" id="A5162F84-DF24-82E7-B0AC-C741D558715C">
+<createdBy>josea</createdBy>
+<createdTime>2024-11-17 21:16:38 UTC</createdTime>
+<ownerDesignName>Modelo_SEM</ownerDesignName>
+<engineerTo>
+<item key="77705B31-3D76-CB69-79C4-93E1D16D2D9C" value="true"/>
+</engineerTo>
+<sourcePk>BFDD3709-D12D-8148-1BF4-4AD728CF7ED9</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8210CB89-2430-B289-6AF5-223513E19AD7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AE5E59B7-81DF-BB17-707B-D513F4C2B832</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
