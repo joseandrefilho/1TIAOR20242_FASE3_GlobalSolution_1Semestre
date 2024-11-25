@@ -8,25 +8,23 @@
 
 # Artificial Intelligence with Computer Systems and Sensors (AICSS)
 
-## Integrantes: 
-- <a href="https://www.linkedin.com/in/joseandrefilho">Jose Andre Filho</a>
+## Integrantes:
+- [Jose Andre Filho](https://www.linkedin.com/in/joseandrefilho)
 
 ## Professores:
-### Tutor 
-- <a href="https://www.linkedin.com/in/lucas-gomes-moreira-15a8452a/">Lucas Gomes Moreira</a>
+### Tutor
+- [Lucas Gomes Moreira](https://www.linkedin.com/in/lucas-gomes-moreira-15a8452a/)
 ### Coordenador
-- <a href="https://www.linkedin.com/in/profandregodoi/">André Godoi Chiovato</a>
-
-# Sistema de Automação de Iluminação Residencial
+- [André Godoi Chiovato](https://www.linkedin.com/in/profandregodoi/)
 
 ## Descrição
-Sistema de automação residencial desenvolvido com ESP32 para otimização da iluminação interna e externa, utilizando sensores LDR e Ultrassônico para controle inteligente baseado em luminosidade e presença.
+Este projeto consiste em um sistema de automação residencial desenvolvido com ESP32 para otimizar a iluminação interna e externa de uma residência. O sistema utiliza sensores LDR e Ultrassônico para controle inteligente da iluminação com base na luminosidade do ambiente e na detecção de presença. A solução visa aumentar a eficiência energética e a segurança da residência.
 
 ## Funcionalidades
-- Controle automático de iluminação externa com dois níveis de intensidade
-- Ativação inteligente de iluminação interna baseada em presença
-- Monitoramento de consumo energético via MQTT
-- Sistema de debug para acompanhamento em tempo real
+- **Controle automático de iluminação externa** com dois níveis de intensidade.
+- **Ativação inteligente da iluminação interna** baseada na presença.
+- **Monitoramento de consumo energético** via MQTT.
+- **Sistema de debug** para acompanhamento em tempo real.
 
 ## Componentes Utilizados
 1. **Hardware**:
@@ -67,7 +65,7 @@ DIST_PROXIMA = 100  // Distância para presença próxima (cm)
 ### Iluminação Externa
 1. **Período Noturno** (LDR < 500):
    - Sem presença: LED azul ativo (baixa intensidade)
-   - Com presença: LED azul + amarelo ativos (alta intensidade)
+   - Com presença: LED azul + LED amarelo ativos (alta intensidade)
 2. **Período Diurno**: LEDs externos desligados
 
 ### Iluminação Interna
@@ -114,51 +112,48 @@ DIST_PROXIMA = 100  // Distância para presença próxima (cm)
 
 ## Simulação
 O projeto pode ser simulado no Wokwi:
-1. Importe o código-fonte
-2. Carregue o diagram.json fornecido
-3. Execute a simulação
+1. Acesse o projeto em [https://wokwi.com/projects/414582888017664001](https://wokwi.com/projects/414582888017664001).
+2. Execute a simulação.
 
 ## Debug e Monitoramento
 - Serial Monitor (115200 baud)
 - Cliente MQTT para acompanhamento do consumo
 
-## Impactos
+## Impactos da Solução
 
-### Positivos
+### Impactos Positivos
 1. **Eficiência Energética**:
-   - Iluminação adaptativa
-   - Controle automatizado
-   - Monitoramento de consumo
+   - Iluminação adaptativa conforme a luminosidade do ambiente e a presença de pessoas.
+   - Controle automatizado, reduzindo o consumo desnecessário de energia.
+   - Monitoramento de consumo em tempo real via MQTT.
 
 2. **Segurança**:
-   - Iluminação mínima constante
-   - Intensificação na detecção de presença
+   - Iluminação mínima constante nas áreas externas, garantindo visibilidade para câmeras sem infravermelho.
+   - Aumento da iluminação em caso de detecção de presença, contribuindo para a segurança do ambiente.
 
 3. **Conforto**:
-   - Automação inteligente
-   - Adaptação às condições ambientais
+   - Automção inteligente, reduzindo a necessidade de intervenção manual.
+   - Adaptação da iluminação às condições ambientais, garantindo conforto visual.
 
-### Negativos
+### Impactos Negativos
 1. **Dependência Tecnológica**:
-   - Necessidade de conexão WiFi
-   - Manutenção de sensores
+   - Necessidade de conexão WiFi para o funcionamento adequado do sistema.
+   - Manutenção periódica dos sensores e do hardware envolvido.
 
 2. **Custos**:
-   - Implementação inicial
-   - Manutenção do sistema
+   - Investimento inicial para aquisição dos componentes e montagem do sistema.
+   - Custos de manutenção e substituição dos sensores e dispositivos.
 
 ## Melhorias Futuras
-1. Interface web para controle
-2. Integração com outros sistemas
-3. Ajuste dinâmico de parâmetros
-4. Histórico de consumo
-
-## Licença
-MIT
-
-## Autor
-[Seu Nome]
+1. Integração com uma interface web para controle remoto da iluminação.
+2. Integração com outros sistemas residenciais, como HVAC e segurança.
+3. Ajuste dinâmico dos parâmetros de detecção com base em dados de uso.
+4. Registro e armazenamento histórico do consumo energético.
 
 ## Link do Vídeo
 [Link para o vídeo no YouTube]
+
+## Licença
+
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
 

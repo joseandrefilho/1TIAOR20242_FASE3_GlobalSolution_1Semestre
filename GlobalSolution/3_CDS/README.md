@@ -86,21 +86,25 @@ erDiagram
 
 ## Arquivos do Projeto
 ```
-projeto/
+3_CDS/
+│
+├── mer/
+│   ├── Modelo_SEM.dmd        # Modelo de dados populacionais
+│   ├── Logical.png           # Diagrama lógico de dados populacionais
+│   └── Relational.png        # Diagrama relacional de dados de consumo
 │
 ├── notebooks/
-│   ├── getPopulacao.ipynb    # Processamento dados populacionais
-│   └── Part4.ipynb           # Processamento dados de consumo
+│   ├── db/
+│   │   └── connection.py                # Script para conexão ao banco de dados
+│   ├── data/
+│   │   └── raw/                         # Dados brutos
+│   ├── analise_consumo_energia.ipynb    # Análise de consumo de energia
+│   ├── get_populacao.ipynb              # Extração de dados populacionais
+│   └── get_consumo_energia.ipynb        # Extração de dados de consumo de energia
 │
-├── sql/
-│   └── script.ddl            # Scripts de criação do banco
-│
-├── data/
-│   └── raw/                  # Dados brutos
-│
-└── resultados/
-    ├── dados/                # Análises em CSV
-    └── graficos/             # Visualizações geradas
+└── sql/
+    └── script.ddl            # Scripts para criação do banco de dados
+
 ```
 
 ## Tecnologias Utilizadas
@@ -111,27 +115,40 @@ projeto/
 - Oracle Database
 - Jupyter Notebooks
 
+---
+
 ## Como Executar
 
-1. Configuração do Ambiente:
-```bash
-python -m venv env
-source env/bin/activate  # Linux/Mac
-env\Scripts\activate     # Windows
-pip install -r requirements.txt
-```
+1. **Configuração do Ambiente:**
+   ```bash
+   python -m venv env
+   source env/bin/activate  # Linux/Mac
+   env\Scripts\activate     # Windows
+   pip install -r requirements.txt
+   ```
 
-2. Configuração do Banco:
-```bash
-# Executar script.ddl no Oracle SQL Developer
-```
+2. **Configuração do Banco:**
+   - Crie o banco de dados utilizando `script.ddl`.
 
-3. Execução dos Notebooks:
-```bash
-jupyter notebook
-# Executar getPopulacao.ipynb
-# Executar Part4.ipynb
-```
+3. **Configuração do `.env`**:
+   - Crie um arquivo `.env` na raiz com as seguintes variáveis:
+     ```plaintext
+     DB_USER=
+     DB_PASSWORD=
+     DB_DSN=
+     ```
+   - Preencha os valores conforme a configuração do seu banco de dados Oracle.
+
+4. **Execução dos Notebooks:**
+   ```bash
+   jupyter notebook
+   ```
+   - Execute os seguintes notebooks:
+     - `get_populacao.ipynb`
+     - `get_consumo_energia.ipynb`
+     - `analise_consumo_energia.ipynb`
+
+---
 
 ## Insights Gerados
 1. **Tendências de Consumo**
@@ -149,14 +166,6 @@ jupyter notebook
    - Correlação com fatores socioeconômicos
    - Benchmarking entre estados
 
-## Próximos Passos
-1. Implementação de análises preditivas
-2. Integração com outras fontes de dados
-3. Desenvolvimento de dashboard interativo
-4. Automação do pipeline de atualização
-
-## Autores
-[Seu Nome]
-
 ## Licença
-Este projeto está sob a licença MIT.
+
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
