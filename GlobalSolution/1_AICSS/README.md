@@ -1,3 +1,22 @@
+# FIAP - Faculdade de Informática e Administração Paulista
+
+<p align="center">
+<a href= "https://www.fiap.com.br/"><img src="../../assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Administração Paulista" border="0" width=40% height=40%></a>
+</p>
+
+<br>
+
+# Artificial Intelligence with Computer Systems and Sensors (AICSS)
+
+## Integrantes: 
+- <a href="https://www.linkedin.com/in/joseandrefilho">Jose Andre Filho</a>
+
+## Professores:
+### Tutor 
+- <a href="https://www.linkedin.com/in/lucas-gomes-moreira-15a8452a/">Lucas Gomes Moreira</a>
+### Coordenador
+- <a href="https://www.linkedin.com/in/profandregodoi/">André Godoi Chiovato</a>
+
 # Sistema de Automação de Iluminação Residencial
 
 ## Descrição
